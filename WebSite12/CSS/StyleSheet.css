@@ -1,0 +1,59 @@
+﻿.row
+{
+	width:120px;
+}
+
+.head
+{
+	color:Purple;
+	padding-left:20%;
+}
+
+.pagehead
+{
+	
+}
+
+.btn
+{ 
+    background:#0066A2;
+    color:white;
+    border-style:outset;
+    border-color:#0066A2;
+    height:30px;
+    width:120px;
+    font: bold 15px arial,sans-serif;
+}
+
+.btn:hover
+{
+    color:Black;
+    
+} 
+
+.lbl
+{
+	width:200px;
+}
+
+.panditDetailHeader
+{
+	color: #F5A300;
+    font-size: 33px;
+    line-height: 70px;
+    text-align: center;
+}
+
+.panditDetailContent
+{
+	color:#373737;
+	font-size:16px;
+}
+
+.imgPanditDetail
+{
+	float:right;
+	height:260px;
+	width:260px;
+}
+

@@ -1,0 +1,67 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Mysite Page</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+ <link rel="Stylesheet" href="CSS/StyleSheet.css" runat="server" type="text/css" />
+</head>
+<body style="background-image:url(Images/back2.jpg)">
+    <form id="form1" runat="server"><center>
+    <table width="80%">
+    <tr>
+        <td>
+            <div style="float:left;padding-left:20%" >
+                Hi <asp:Label ID="lblUsername" runat="server" Text=""></asp:Label>
+            </div>
+        </td>
+        <td>
+             <div style="float:right;padding-right:10%">
+                <asp:HyperLink ID="hlkLogout" NavigateUrl="Login.aspx?type=logout" runat="server">Logout</asp:HyperLink>
+            </div>            
+        </td>
+    </tr>
+    <tr><td colspan="2">
+        <img src="Images/Home.jpg" alt="Nevon logo" 
+            style="height: 179px; width: 100%"/></td></tr>
+    <tr>
+        <td style="border-right-width:medium; border-right-style:double; border-right-color:Olive;width:25%;vertical-align:top">
+        <ul style="font-size:medium">
+        <li><a href="Home.aspx">Home</a></li>
+        <li><a href="Pooja packagesin.aspx">Pooja Samagri Package</a></li>
+        <li><a href="Panditprofilein.aspx">Pandit Profile</a></li>
+        <li><a href="foodpackagein.aspx">Food Package</a></li>
+        <li><a href="Cart.aspx">Shopping Cart</a></li>
+        <li><a href="About Us.aspx">About Us</a></li>
+        <li><a href="Contact Us.aspx">Contact Us</a></li>
+        </ul>
+        <br />
+    
+    <img src="Images/image1.jpg" alt="Image1" style="width: 100%"/><br /><hr />
+    <img src="Images/image2.jpg" alt="Image2" style="width: 100%"/>
+    
+  
+    </td>
+    <td align="left" valign="top">
+    <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </td></tr>
+    
+    </table>
+    <table style="border-bottom-width:thin; border-bottom-style:ridge; border-top-style:double">
+    <tr>
+    <td><h5><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; --<a href="About Us.aspx">About Us</a>--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong></h5></td><td><h5>
+                <a href=Home.aspx>MyWebsite</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </h5></td><td><h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </h5></td></tr>
+    </table>
+
+    
+    </center>
+        
+   
+    </form>
+</body>
+</html>
